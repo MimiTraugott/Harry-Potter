@@ -1,5 +1,4 @@
 import React from 'react'
-// import logo from './logo.svg';
 import './App.css'
 import { HashRouter, Route, Switch } from 'react-router-dom'
 import GreatHall from './components/GreatHall'
@@ -31,7 +30,7 @@ class App extends React.Component {
             <h1>Hoggy Hoggy Hogwarts</h1>
             <img
               src="https://vignette.wikia.nocookie.net/harrypotter/images/a/ae/Hogwartscrest.png/revision/latest?cb=20110806202805"
-              alt='hogwarts crest'
+              alt="hogwarts crest"
             />
           </header>
           <Switch>
@@ -47,8 +46,7 @@ class App extends React.Component {
             />
             <Route
               path="/about"
-              component={() => <About house={this.state.house} /
-              >}
+              component={() => <About house={this.state.house} />}
             />
             <Route
               path="/house/:name"
